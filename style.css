@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+}
+.action-buttons{
+    background-color: transparent;
+    border: none;
+}
+.buttons{
+    background: transparent;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Recursive', sans-serif;
+    border: none;
+    width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.buttons:hover{
+    color: #002366;
+}
+.buttons::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: width 1s;
+    background:red;
+}
+.buttons:hover::after{
+    width: 100%;
+}
+.cover-img{
+    height: 100vh;
+    /* width: 100%; */
+    background-color: #9ED6D7;
+}
+.cover-img h1{
+    padding: 50px;
+    padding-right: 0px;
+    text-align: center;
+    position: relative;
+    color: black;
+    font-weight: bold;
+} 
+.images{
+    width: 90px;
+    height: 50px;
+    transition: all 1s;
+}
+.images:hover{
+    transform: scale(1.35);
+}
+.lightfont{
+    font-family: 'Work Sans',sans-serif;
+    font-size: 36px;
+}
+.content{
+    padding-top: 50px;
+}
+.section-heading{
+    font-size: 48px;
+}
+.fontSize{
+    font-size: 24px;
+}
+.alignContent{
+    display: flex;
+    align-items: center;
+}
+.illustrations{
+    width: 500px;
+    height: 500px;
+}
+.socialMediaIcons{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.animate-text {
+    position: relative;
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+}
+.animate-text li {
+    font-family: 'Recursive', sans-serif;
+    font-size: 32px;
+    color: black;
+    height: 45px;
+    margin-bottom: 45px;
+    overflow: hidden;
+    color: #002366;
+}
+.flip3 {
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; 
+    padding-left: 20px;
+}
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+@media (max-width:768px){
+    html{
+        overflow-x: hidden;
+    }
+    .illustrations{
+        width: 250px;
+        height: 250px;
+    }
+    #cover-illustration{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .lightfont{
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    .socialMediaIcons{
+        padding-bottom: 35px;
+    }
+    .cover-img h1{
+        padding: 0;
+    }
+    .navbar{
+        position: fixed;
+    }
+}
